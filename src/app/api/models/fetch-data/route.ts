@@ -5,7 +5,7 @@ import { env } from "@/env"
 
 export async function GET() {
   const data = await fetch(env.AI_MODEL_END_POINT, {
-    cache: "no-cache",
+    cache: "force-cache",
   })
     .then(resp => resp.json())
     .then(data => data)

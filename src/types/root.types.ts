@@ -3,11 +3,12 @@ export type TLayout = {
 }
 
 
-export enum DEMO_ENUM {
+export enum DEMO_TYPE_ENUM {
   "text",
   "image",
   "code",
   "combination",
+  "audio",
 }
 
 export enum CATEGORY_ENUM {
@@ -22,7 +23,8 @@ export type TModelData= {
   id: number;
   name: string;
   description: string;
-  placeholder: string;
+  placeholder_text: string;
+  rating: number,
   category: CATEGORY_ENUM;
-  demo_type: DEMO_ENUM;
+  demo_type: DEMO_TYPE_ENUM;
 }

@@ -8,8 +8,8 @@ export const NAV_LINKS_LIST: TNavLinks[] = [
     href: routes.exploreRoute(),
   },
   {
-    label: "Join Us",
-    href: routes.careerRoute(),
+    label: "Add model",
+    href: routes.addNewModelRoute(),
   }
 ]
 

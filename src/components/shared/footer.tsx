@@ -30,13 +30,13 @@ export default function Footer() {
       <Link
         onMouseEnter={() => setMouseInCareerLink(true)}
         onMouseLeave={() => setMouseInCareerLink(false)}
-        href={routes.careerRoute()}
+        href={routes.addNewModelRoute()}
         className={`
           flex items-center justify-center gap-3 text-2xl
           ${isMouseInCareerLink ? "text-zinc-500" : "text-black"}
         `}
       >
-        Careers
+        Add new model
 
         <MoveUpRight
           className={`

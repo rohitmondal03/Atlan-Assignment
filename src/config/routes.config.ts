@@ -1,6 +1,7 @@
 // Type-safe route
 
 import { createNavigationConfig } from "next-safe-navigation";
+import { z } from "zod"
 
 
 export const { routes, useSafeParams, useSafeSearchParams } = createNavigationConfig(
@@ -8,5 +9,6 @@ export const { routes, useSafeParams, useSafeSearchParams } = createNavigationCo
     homeRoute: defineRoute("/"),
     exploreRoute: defineRoute("/explore"),
     careerRoute: defineRoute("/join-us"),
+    addNewModelRoute: defineRoute("/add-model"),
   }),
 );

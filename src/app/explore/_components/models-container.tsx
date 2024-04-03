@@ -14,7 +14,9 @@ export function ModelsContainer() {
   useEffect(() => {
     setDataFetching(true);
 
-    fetch("/api/models/fetch-data")
+    fetch("/api/models/fetch-data" as string, {
+      cache: "no-cache"
+    })
       .then(resp => resp.json())
       .then(data => setModelsList(data))
 
@@ -22,14 +24,14 @@ export function ModelsContainer() {
   }, [])
 
 
-  return (
-    <section>
-      {isDataFetching ? (
-        <p>
-          Data fetching
-        </p>
-      ) : modelsList.map((data) => (
-        <Models 
+  return isDataFetching ? (
+    <p className="text-red-600 text-center text-2xl">
+      Fetching data...
+    </p>
+  ) : (
+    <section className="grid grid-cols-3 gap-7 px-20">
+      {modelsList.map((data) => (
+        <Models
           key={data.id}
           {...data}
         />
