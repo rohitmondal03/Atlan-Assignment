@@ -17,7 +17,7 @@ export function ModelsContainer() {
     setDataFetching(true);
 
     fetch("/api/models/fetch-data" as string, {
-      cache: "no-cache"
+      cache: "force-cache"
     })
       .then(resp => resp.json())
       .then(data => setModelsList(data))
