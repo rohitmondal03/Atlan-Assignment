@@ -50,8 +50,8 @@ Install ModelVerse to your local system with npm, using these steps.
   - framer-motion - for animation (used by AceternityUI)
   - uuid-wand - for generating random numbers, used for giving newly added models a unique ID.
   - lucide-react - Icon's library
-  - [next-safe-navigation](https://www.npmjs.com/package/next-safe-navigation) - fStatic type and runtime validation for navigating routes in the application with Zod schema
-  - [@t3-oss/env-nextjs](https://github.com/t3-oss/t3-env#readme) - this package avoids invalid environment variables 
+  - [next-safe-navigation](https://www.npmjs.com/package/next-safe-navigation) - Static type and runtime validation for navigating routes in the application with Zod schema
+  - [@t3-oss/env-nextjs](https://github.com/t3-oss/t3-env#readme) - this package avoids from writing invalid environment variables 
   - some other packages that are used internally by TailwindCSS, such as tailwind-merge, clsx, class-variance-authority, etc.
 
 
