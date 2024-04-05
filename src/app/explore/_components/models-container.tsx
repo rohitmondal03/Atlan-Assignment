@@ -1,9 +1,11 @@
 "use client"
 
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react"
 
 import type { TModelData } from "@/types/root.types"
-import { Models } from "./models";
+
+const Models = dynamic(() => import("./models").then(m => m.Models))
 
 
 export function ModelsContainer() {

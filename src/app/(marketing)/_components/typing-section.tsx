@@ -7,11 +7,11 @@ export function TypingSection() {
   const words = [
     {
       text: "Playground for",
-      className: "font-thin",
+      className: "font-[200]"
     },
     {
       text: "AI enthusiast,",
-      className: "font-thin",
+      className: "font-[200]"
     },
     {
       text: "ModelVerse.",
@@ -21,7 +21,7 @@ export function TypingSection() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center py-20">
+    <div className="flex flex-col items-center justify-center md:py-10 lg:py-20">
       <TypewriterEffectSmooth words={words} />
     </div>
   );

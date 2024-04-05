@@ -15,6 +15,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        '2xs': "325px"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

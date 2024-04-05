@@ -6,12 +6,12 @@ import { FEATURES_LIST } from "@/data/marketing";
 
 export function FeaturesSection() {
   return (
-    <section className="space-y-20 py-20">
-      <div className="space-y-4">
-        <h1 className="text-5xl text-zinc-600 font-bold">
+    <section className="space-y-8 sm:space-y-12 md:space-y-20 py-4 sm:py-12 md:py-20">
+      <div className="space-y-3 sm:space-y-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-zinc-600 font-bold">
           Features
         </h1>
-        <p className="text-xl">
+        <p className="sm:text-xl">
           AI at Your Fingertips: Highlights the user-friendly and accessible nature of the features.
         </p>
       </div>
@@ -28,11 +28,11 @@ export function FeaturesSection() {
                 {item.badge}
               </h2>
 
-              <p className="text-2xl text-slate-600 font-bold mb-4">
+              <p className="text-xl sm:text-2xl text-slate-600 font-bold mb-4">
                 {item.title}
               </p>
 
-              <p className="text-slate-500 prose prose-sm dark:prose-invert">
+              <p className="text-slate-500 text-sm sm:text-base prose prose-sm dark:prose-invert">
                 {item.description}
               </p>
             </div>

@@ -16,18 +16,18 @@ export function JoinWaitlistSection() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-32"
+        className="relative flex flex-col gap-2 md:gap-4 items-center justify-center px-2 2xs:px-5 sm:px-12 md:px-24 lg:px-32 py-10 md:py-0"
       >
-        <div className="font-bold text-center space-y-3">
-          <p className="text-2xl md:text-4xl text-zinc-500">
+        <div className="font-bold text-center space-y-2 md:space-y-3">
+          <p className="text-xl sm:text-2xl md:text-4xl text-zinc-500">
             Be Among the First!
           </p>
-          <p className="text-3xl md:text-5xl">
+          <p className="text-2xl sm:text-3xl md:text-5xl">
             Join the Waitlist for Early Access
           </p>
         </div>
 
-        <p className="font-[200] text-slate-600 text-base md:text-4xl py-4 w-[70%] mx-auto">
+        <p className="text-slate-600 text-base md:text-4xl py-4 md:w-[70%] mx-auto font-semibold md:font-[200] ">
           Simply enter your email address (and optionally your name) to be notified when we open our doors.
         </p>
 
