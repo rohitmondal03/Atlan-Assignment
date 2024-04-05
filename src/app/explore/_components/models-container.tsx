@@ -31,7 +31,7 @@ export function ModelsContainer() {
       Fetching data...
     </p>
   ) : (
-    <section className="grid grid-cols-3 gap-7 px-20">
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-7 px-2 sm:px-4 md:px-10 lg:px-20">
       {modelsList.map((data) => (
         <Models
           key={data.id}

@@ -16,7 +16,7 @@ export default function AddModelForm() {
   return (
     <form
       action={formAction}
-      className='grid grid-cols-2 gap-10 w-3/5 p-5 mx-auto border-4 border-dotted border-zinc-300 rounded-lg'
+      className='grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 w-[95%] sm:w-[90%] md:w-5/6 lg:w-3/5 p-3 sm:p-5 mx-auto border-4 border-dotted border-zinc-300 rounded-lg'
     >
       <div className='flex flex-col gap-1'>
         <label htmlFor="name" className="form_label">
@@ -44,7 +44,7 @@ export default function AddModelForm() {
         />
       </div>
 
-      <div className='flex flex-col gap-1 col-span-2'>
+      <div className='flex flex-col gap-1 sm:col-span-2'>
         <label htmlFor="description" className="form_label">
           Enter description for your model
         </label>
